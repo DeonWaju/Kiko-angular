@@ -1,0 +1,24 @@
+div
+{
+  text-align: center;
+}
+
+
+
+label{
+  text-align: center;
+}
+
+.alert
+{
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  text-align: left;
+
+}
+
+.alert-danger {
+  background-color: rgb(238, 14, 14)
+}
+
