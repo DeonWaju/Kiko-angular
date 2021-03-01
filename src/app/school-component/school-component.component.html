@@ -1,0 +1,6 @@
+
+
+<div *ngFor="let listUser of usersList">
+  {{listUser.name}} has {{listUser.count}} counts
+  <span (click) = "removeUser(listUser.id)">Remove</span>
+</div>

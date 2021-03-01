@@ -1,15 +1,36 @@
-<button type="button" name="button" (click)='getInfoReceived1()' >Employee1</button>
-<ul class="list-group">
-  <li *ngFor="let info of infoReceived1" class="list-group-item">{{info}}</li>
-</ul>
-<pre></pre>
-<button type="button" name="button" (click)='getInfoReceived2()' >Employee2</button>
-<ul class="list-group">
-  <li *ngFor="let info of infoReceived2" class="list-group-item">{{info}}</li>
-</ul>
-<pre></pre>
-<button type="button"gi name="button" (click)='getInfoReceived3()' class="button-edit">Employee3</button>
-<ul class="list-group">
-  <li *ngFor="let info of infoReceived3" class="list-group-item">{{info}}</li>
-</ul>
 
+<form #frm = "ngForm" >
+  <div class="">
+    <input type="text" name="location" value="" ngModel >
+    <button type="button" name="button">Add Info</button>
+  </div>
+  <pre></pre>
+</form>
+
+
+<button type="button" name="button" (click)="getInfoReceived1()">
+  Employee1
+</button>
+<ul class="list-group">
+  <li *ngFor="let info of infoReceived1" class="list-group-item">{{ info }}</li>
+</ul>
+<pre></pre>
+<button type="button" name="button" (click)="getInfoReceived2()">
+  Employee2
+</button>
+<ul class="list-group">
+  <li *ngFor="let info of infoReceived2" class="list-group-item">{{ info }}</li>
+</ul>
+<pre></pre>
+<button
+  type="button"
+  gi
+  name="button"
+  (click)="getInfoReceived3()"
+  class="button-edit"
+>
+  Employee3
+</button>
+<ul class="list-group">
+  <li *ngFor="let info of infoReceived3" class="list-group-item">{{ info }}</li>
+</ul>
